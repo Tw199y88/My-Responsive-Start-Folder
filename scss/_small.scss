@@ -21,8 +21,8 @@ body {
 }
 
 #headerWrapper {
-    background: rgb(126,217,87);
-    background: linear-gradient(60deg, rgba(0,151,178,1) 0%, rgba(126,217,87,1) 81%);
+background: rgb(126,217,87);
+background: linear-gradient(60deg, rgba(0,151,178,1) 0%, rgba(126,217,87,1) 81%);
   color: $secondaryColor;
 }
 header {
@@ -38,7 +38,7 @@ header {
 }
 
 #navWrapper {
-  background-color: #94B9FF;
+  background-color: #DEFBFF;
 }
 
 nav {
@@ -52,16 +52,16 @@ nav {
     }
   }
   li.active {
-    background-color: red;
+    background-color: #FFE788;
   }
   a {
     display: block;
     padding: 0.75rem;
-    color: white;
+    color: black;
     text-align: center;
     text-decoration: none;
     &:hover {
-      color: #123;
+      color: red ;
     }
   }
 }
@@ -69,7 +69,8 @@ nav {
 // begin the footer
 
 #footerWrapper {
-    background-color: lime;
+    background: rgb(126,217,87);
+background: linear-gradient(60deg, rgba(0,151,178,1) 0%, rgba(126,217,87,1) 81%);
 }
 footer {
     padding: 0.5rem $gutter;
