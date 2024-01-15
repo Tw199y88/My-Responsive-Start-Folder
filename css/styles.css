@@ -333,7 +333,8 @@ body {
 }
 
 #headerWrapper {
-  background-color: #abc;
+  background: rgb(126, 217, 87);
+  background: linear-gradient(60deg, rgb(0, 151, 178) 0%, rgb(126, 217, 87) 81%);
   color: #001adb;
 }
 

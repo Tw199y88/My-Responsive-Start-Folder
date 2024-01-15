@@ -21,7 +21,8 @@ body {
 }
 
 #headerWrapper {
-  background-color: #abc;
+    background: rgb(126,217,87);
+    background: linear-gradient(60deg, rgba(0,151,178,1) 0%, rgba(126,217,87,1) 81%);
   color: $secondaryColor;
 }
 header {
