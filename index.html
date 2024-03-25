@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
 
     <link href="css/styles.min.css" rel="stylesheet">
 
@@ -30,24 +32,56 @@
     
 <div id="headerWrapper">
     <header>
-        <img src="images/header-logo.png" alt="header-logo" width="40" height="40">
-        <h1>The Front End Developer</h1>
+        <figure class="logo">
+            <img src="images/logo-1x.png" alt="header-logo" width="45" height="50"
+            srcset="images/logo-1x.png 1x, images/logo-2x.png 2x, images/logo-3x.png 3x">
+        </figure>
+        <h1>Andy's Auto Dealership</h1>
+        <h2><a href="#">800-786-9999</a></h2>
     </header>
 </div>
 
-<div>
-    <nav id="navWrapper">
-        <ul>
-            <li class="active"><a href="#">Learn</a></li>
-            <li><a href="#">Practice</a></li>
-            <li><a href="#">Implement</a></li>
+<div id="navWrapper">
+    <nav >
+        <button id="hamburgerButton"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
+            <li class="active"><a href="#">Location</a></li>
+            <li><a href="#">Inventory</a></li>
+            <li><a href="#">Appointments</a></li>
         </ul>
 </nav>
 </div>
 
 <div id="mainWrapper">
     <main>
-<h1>Learn</h1>
+        <div class="parentHero">
+            <img src="images/hero.webp" width="1200" height="500" alt="">
+            <p>Purchase the car of your dreams</p>
+        </div>
+        <div class="cardWrapper">
+            <div class="showCard bounce">
+                <img src="images/finance.svg">
+                <p>At Andy's, we understand that purchasing a vehicle is a significant investment, which is why we offer a variety of flexible financing options to make your buying experience as seamless as possible. Our finance experts will work with you to explore loan options, lease agreements, and financing plans tailored to your needs and budget. Drive away with confidence knowing you've secured the best financing solution for your new ride.</p> 
+                <div> Financing </div>
+            </div>
+            <div class="showCard flip">
+                <img src="images/access.svg">
+                <p>Enhance your driving experience and customize your vehicle to reflect your unique style with our wide range of accessories and add-ons at [Your Dealership Name]. From practical additions like extended warranties and maintenance plans to personalized upgrades such as premium sound systems and navigation packages, we have everything you need to make your car truly yours. Explore our selection of quality accessories and take your driving adventures to the next level.</p>
+                <div><a>Accessories & Add-Ons</a></div>
+            </div>
+            <div class="showCard pulse">
+                <img src="images/garage.svg">
+                <p>Your journey with [Your Dealership Name] doesn't end after you drive off the lot – our dedicated service and maintenance department is here to ensure your vehicle stays in top condition for years to come. From routine maintenance services like oil changes and tire rotations to complex repairs and diagnostics, our certified technicians have the expertise and state-of-the-art equipment to keep your car running smoothly. Schedule your next service appointment with us and experience the highest level of care for your vehicle.</p>
+                <div> Service / Maintenance </div>
+            </div>
+            <div class="showCard shake">
+                <img src="images/trade-icon.svg">
+                <p>Looking to upgrade your ride? At Andy's, we make it easy to trade in your current vehicle and drive away in the car of your dreams. Whether you're looking to trade up to a newer model, downsize to something more economical, or simply ready for a change, we're here to help.</p>
+                <div> Trade-Ins </div>
+            </div>
+        </div>
+        <div id="customerQuotes">
+        </div>
     </main>
 </div>
 
@@ -56,6 +90,6 @@
         <p>&copy; <span id="year">x</span> &bull; Brooke Anderson</p>
     </footer>
 </div>
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js" type="module"></script>
 </body>
 </html>
